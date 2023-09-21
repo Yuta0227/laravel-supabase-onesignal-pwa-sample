@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Berkayk\OneSignal\OneSignalClient;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-
 class TestController extends Controller
 {
+    private $onesignal_client;
+    public function __construct(){
+        $this->onesignal_client=new OneSignalClient(env('ONESIGNAL_APP_ID'),env('ONESIGNAL_REST_API_KEY'),null,0);
+    }
     /**
      * Display a listing of the resource.
      */
@@ -61,5 +65,15 @@ class TestController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function sendNotification(){
+        //supabaseの設定、ユーザー登録、onesignalへのユーザー登録(loginメソッドでいけるかわからん)が必要
+        $this->onesignal_client->sendNotificationToAll(
+            "Some Message",
+            $url = null,
+            $data = null,
+            $buttons = null,
+            $schedule = null
+        );
     }
 }
