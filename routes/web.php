@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::resource('/test',TestController::class);
 Route::post('test/send_notification', [TestController::class, 'sendNotification'])->name('test.send_notification');
