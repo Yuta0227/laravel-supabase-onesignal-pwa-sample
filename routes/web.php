@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 Route::resource('/test',TestController::class);
 Route::post('test/send_notification', [TestController::class, 'sendNotification'])->name('test.send_notification');
+Route::get('/offline', function () {
+    return view('vendor.laravelpwa.offline');
+});
