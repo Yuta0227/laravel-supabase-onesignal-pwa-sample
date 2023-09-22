@@ -1,16 +1,17 @@
 var staticCacheName = "pwa-v" + new Date().getTime();
 var filesToCache = [
-    // './resources/views/vendor/laravelpwa/offline',
-    // './public/css/app.css',
-    // './public/js/app.js',
-    '/storage/images/icons/icon-72x72.png',
-    '/storage/images/icons/icon-96x96.png',
-    '/storage/images/icons/icon-128x128.png',
-    '/storage/images/icons/icon-144x144.png',
-    '/storage/images/icons/icon-152x152.png',
-    '/storage/images/icons/icon-192x192.png',
-    '/storage/images/icons/icon-384x384.png',
-    '/storage/images/icons/icon-512x512.png',
+    '/',
+    '/offline',
+    '/css/app.css',
+    '/js/app.js',
+    'storage/images/icons/icon-72x72.png',
+    'storage/images/icons/icon-96x96.png',
+    'storage/images/icons/icon-128x128.png',
+    'storage/images/icons/icon-144x144.png',
+    'storage/images/icons/icon-152x152.png',
+    'storage/images/icons/icon-192x192.png',
+    'storage/images/icons/icon-384x384.png',
+    'storage/images/icons/icon-512x512.png',
 ];
 
 // Cache on install
@@ -46,7 +47,7 @@ self.addEventListener("fetch", event => {
                 return response || fetch(event.request);
             })
             .catch(() => {
-                return caches.match('offline');
+                return caches.match('/offline');
             })
     )
 });

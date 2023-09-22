@@ -29,7 +29,6 @@
 <!-- Tile for Win8 -->
 <meta name="msapplication-TileColor" content="{{ $config['background_color'] }}">
 <meta name="msapplication-TileImage" content="{{ data_get(end($config['icons']), 'src') }}">
-<script src="{{ asset('/serviceworker.js') }}"></script>
 <script type="text/javascript">
     // Initialize the service worker
     if ('serviceWorker' in navigator) {
