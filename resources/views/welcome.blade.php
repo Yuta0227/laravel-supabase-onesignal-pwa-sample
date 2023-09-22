@@ -21,6 +21,7 @@
     <a href="{{ route('test.index') }}">
         テストへ
     </a>
+    <img src="{{ asset('storage/images/icons/icon-72x72.png') }}">
 </body>
 
 </html>
