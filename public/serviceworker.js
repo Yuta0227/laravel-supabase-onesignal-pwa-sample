@@ -1,16 +1,16 @@
 var staticCacheName = "pwa-v" + new Date().getTime();
 var filesToCache = [
-    './resources/views/vendor/laravelpwa/offline',
+    // './resources/views/vendor/laravelpwa/offline',
     // './public/css/app.css',
     // './public/js/app.js',
-    './public/storage/images/icons/icon-72x72.png',
-    './public/storage/images/icons/icon-96x96.png',
-    './public/storage/images/icons/icon-128x128.png',
-    './public/storage/images/icons/icon-144x144.png',
-    './public/storage/images/icons/icon-152x152.png',
-    './public/storage/images/icons/icon-192x192.png',
-    './public/storage/images/icons/icon-384x384.png',
-    './public/storage/images/icons/icon-512x512.png',
+    '/storage/images/icons/icon-72x72.png',
+    '/storage/images/icons/icon-96x96.png',
+    '/storage/images/icons/icon-128x128.png',
+    '/storage/images/icons/icon-144x144.png',
+    '/storage/images/icons/icon-152x152.png',
+    '/storage/images/icons/icon-192x192.png',
+    '/storage/images/icons/icon-384x384.png',
+    '/storage/images/icons/icon-512x512.png',
 ];
 
 // Cache on install
