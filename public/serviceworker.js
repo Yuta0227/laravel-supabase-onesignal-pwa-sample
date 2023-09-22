@@ -23,7 +23,7 @@ self.addEventListener("install", event => {
             })
     )
 });
-
+console.log('Service Worker: Registered (Pages)');
 // Clear cache on activate
 self.addEventListener('activate', event => {
     event.waitUntil(
