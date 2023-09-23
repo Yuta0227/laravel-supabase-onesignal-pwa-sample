@@ -23,3 +23,12 @@ Route::post('test/send_notification', [TestController::class, 'sendNotification'
 Route::get('/offline', function () {
     return view('vendor.laravelpwa.offline');
 });
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
