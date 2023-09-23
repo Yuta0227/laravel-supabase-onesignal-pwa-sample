@@ -22,6 +22,16 @@
         テストへ
     </a>
     <img src="{{ asset('storage/images/icons/icon-72x72.png') }}">
+    <button>
+        <a href="{{ route('register') }}">
+            登録
+        </a>
+    </button>
+    <button>
+        <a href="{{ route('login') }}">
+            ログイン
+        </a>
+    </button>
 </body>
 
 </html>
