@@ -15,7 +15,7 @@
         "livewire/livewire": "^3.0",
         "symfony/http-client": "^6.3",
         "symfony/mailgun-mailer": "^6.3",
-        "mailersend/mailersend": "^1.0",
+        "mailersend/mailersend": "^0.8.0",
         "mailersend/laravel-driver": "^2.2"
     },
     "require-dev": {
