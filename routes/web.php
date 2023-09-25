@@ -23,6 +23,7 @@ Route::post('test/send_notification', [TestController::class, 'sendNotification'
 Route::get('/offline', function () {
     return view('vendor.laravelpwa.offline');
 });
+//たぶんjetstream導入時に自動で追加された？
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

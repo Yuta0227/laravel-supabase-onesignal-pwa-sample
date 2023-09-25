@@ -26,6 +26,8 @@ class CreateNewUser implements CreatesNewUsers
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
 
+        //パスワードなくすモデルからもmigrationからも
+        //userのcreateもそっどのIDは自動生成ではなく、auth.usersのIDを取得するようにする
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],
