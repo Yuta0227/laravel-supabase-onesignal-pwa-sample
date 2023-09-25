@@ -14,7 +14,6 @@
     <!-- Styles -->
     <style>
     </style>
-    @laravelPWA
 </head>
 
 <body>
