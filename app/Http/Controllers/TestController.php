@@ -75,5 +75,6 @@ class TestController extends Controller
             $buttons = null,
             $schedule = null
         );
+        return redirect()->route('test.index');
     }
 }
