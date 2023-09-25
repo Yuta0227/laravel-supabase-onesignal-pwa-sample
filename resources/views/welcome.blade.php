@@ -20,7 +20,6 @@
     <a href="{{ route('test.index') }}">
         テストへ
     </a>
-    <img src="{{ asset('/logo.png') }}">
     <button>
         <a href="{{ route('register') }}">
             登録
