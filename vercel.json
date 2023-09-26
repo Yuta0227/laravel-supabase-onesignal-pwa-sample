@@ -29,6 +29,10 @@
             "dest":"/public/sw.js"
         },
         {
+            "src":"/",
+            "dest":"/public/index.php"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
