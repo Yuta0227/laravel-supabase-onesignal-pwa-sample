@@ -13,8 +13,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
+    <link href="/build/assets/app.css" rel="stylesheet">
+    <script src="/build/assets/app.js"></script>
     
     <!-- Styles -->
     @livewireStyles

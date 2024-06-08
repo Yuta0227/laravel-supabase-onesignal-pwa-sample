@@ -28,7 +28,9 @@ export default defineConfig({
     build:{
         manifest:true,
         rollupOptions:{
-            input:"resources/js/app.js"
+            output:{
+                assetFileNames:'assets/[name].[ext]',
+            }
         }
     }
 });
