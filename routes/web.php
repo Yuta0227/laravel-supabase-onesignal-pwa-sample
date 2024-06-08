@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/', function () {
+    Artisan::call('storage:link');
     return view('welcome');
 });
 Route::resource('/test',TestController::class);
