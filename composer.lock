@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d8fa5d1756cebbc387f0474afd93e25",
+    "content-hash": "f2b765d20679f3b0a5744f799c332952",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -8643,24 +8643,24 @@
         },
         {
             "name": "revolution/laravel-vercel-installer",
-            "version": "1.1.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-vercel-installer.git",
-                "reference": "894b9e5975347929c73a5377097f3a80074cb358"
+                "reference": "fdb821bdf19d3f9a5fc84d67444e6734f8d9f6ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-vercel-installer/zipball/894b9e5975347929c73a5377097f3a80074cb358",
-                "reference": "894b9e5975347929c73a5377097f3a80074cb358",
+                "url": "https://api.github.com/repos/kawax/laravel-vercel-installer/zipball/fdb821bdf19d3f9a5fc84d67444e6734f8d9f6ff",
+                "reference": "fdb821bdf19d3f9a5fc84d67444e6734f8d9f6ff",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^9.0||^10.0",
-                "php": "^8.1"
+                "illuminate/support": "^10.0||^11.0",
+                "php": "^8.2"
             },
             "require-dev": {
-                "orchestra/testbench": "^7.0||^8.0"
+                "orchestra/testbench": "^8.0||^9.0"
             },
             "type": "library",
             "extra": {
@@ -8692,9 +8692,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-vercel-installer/issues",
-                "source": "https://github.com/kawax/laravel-vercel-installer/tree/1.1.0"
+                "source": "https://github.com/kawax/laravel-vercel-installer/tree/1.2.2"
             },
-            "time": "2023-04-06T03:07:44+00:00"
+            "time": "2024-05-29T03:48:56+00:00"
         },
         {
             "name": "sebastian/cli-parser",
