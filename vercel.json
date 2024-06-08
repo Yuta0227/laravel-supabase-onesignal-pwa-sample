@@ -23,16 +23,16 @@
     },
     "builds": [
         {
+            "src": "api/index.php",
+            "use": "vercel-php@0.7.1"
+        },
+        {
             "src": "package.json",
             "use": "@vercel/static-build",
             "config": {
                 "installCommand": "apt-get update && apt-get install -y php-cli && npm install && composer install",
                 "buildCommand": "npm run build"
             }
-        },
-        {
-            "src": "api/index.php",
-            "use": "vercel-php@0.7.1"
         }
     ]
 }
