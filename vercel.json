@@ -30,7 +30,7 @@
             "src": "package.json",
             "use": "@vercel/static-build",
             "config": {
-                "installCommand": "apt-get update && apt-get install -y php-cli && npm install && composer install",
+                "installCommand": "./install_php.sh && npm install",
                 "buildCommand": "npm run build"
             }
         }
