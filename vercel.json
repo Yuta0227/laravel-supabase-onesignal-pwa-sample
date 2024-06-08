@@ -1,9 +1,6 @@
 {
     "version": 2,
     "framework": null,
-    "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.1" }
-    },
     "routes": [
         {
             "src": "/(.*)",
@@ -32,6 +29,10 @@
                 "installCommand": "apt-get update && apt-get install -y php-cli && npm install && composer install",
                 "buildCommand": "npm run build"
             }
+        },
+        {
+            "src": "api/index.php",
+            "use": "@vercel/php"
         }
     ]
 }
