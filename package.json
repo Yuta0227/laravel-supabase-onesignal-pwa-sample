@@ -2,7 +2,6 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev":"vite",
         "build": "vite build --mode production",
         "postbuild":"php artisan storage:link && php artisan optimize:clear"
     },
