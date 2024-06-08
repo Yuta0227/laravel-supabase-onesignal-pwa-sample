@@ -1,5 +1,19 @@
 {
     "version": 2,
+    "builds": [
+        {
+            "src": "api/index.php",
+            "use": "vercel-php@0.7.1"
+        },
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "installCommand": "install_php.sh && npm install",
+                "buildCommand": "npm run build"
+            }
+        }
+    ],
     "framework": null,
     "routes": [
         {
@@ -20,19 +34,5 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    },
-    "builds": [
-        {
-            "src": "api/index.php",
-            "use": "vercel-php@0.7.1"
-        },
-        {
-            "src": "package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "installCommand": "./install_php.sh && npm install",
-                "buildCommand": "npm run build"
-            }
-        }
-    ]
+    }
 }
