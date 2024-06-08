@@ -15,7 +15,9 @@
     <!-- Scripts -->
     <link href="/build/assets/app.css" rel="stylesheet">
     <script src="/build/assets/app.js"></script>
-    
+    <script>
+        console.log('yes')
+    </script>
     <!-- Styles -->
     @livewireStyles
     <!-- PWA  -->
