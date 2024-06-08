@@ -10,10 +10,10 @@ self.addEventListener("install", function (event) {
 });
 
 const filesToCache = [
-    '/',
-    '/offline.html',
-    '/assets/css/app.css',
-    '/assets/js/app.js',
+    './',
+    './offline.html',
+    './storage/css/app.css',
+    './storage/js/app.js',
 ];
 
 const checkResponse = function (request) {
