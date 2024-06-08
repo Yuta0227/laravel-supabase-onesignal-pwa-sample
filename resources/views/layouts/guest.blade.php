@@ -13,8 +13,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}"></script>
+    <link href="/build/assets/app.css" rel="stylesheet">
+    <script src="/build/assets/app.js"></script>
     
     <!-- Styles -->
     @livewireStyles

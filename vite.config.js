@@ -10,7 +10,7 @@ export default defineConfig({
         laravel({
             input: ["resources/css/app.css", "resources/js/app.js"],
             refresh: true,
-            // refresh: [...refreshPaths, "app/Livewire/**"],
+            refresh: [...refreshPaths, "app/Livewire/**"],
         })
         // basicSsl(),
     ],
@@ -25,4 +25,10 @@ export default defineConfig({
         port: 5173,
         hmr: { host },
     },
+    build:{
+        manifest:true,
+        rollupOptions:{
+            input:"resources/js/app.js"
+        }
+    }
 });
