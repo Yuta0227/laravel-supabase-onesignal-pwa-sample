@@ -9,7 +9,7 @@
             "src": "package.json",
             "use": "@vercel/static-build",
             "config": {
-                "installCommand": "install_php.sh && npm install",
+                "installCommand": "sh install_php.sh && npm install",
                 "buildCommand": "npm run build && npm run postbuild"
             }
         }
