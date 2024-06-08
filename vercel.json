@@ -24,11 +24,12 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
     },
-    "builds": { 
-        "env": {
-            "COMPOSER_ALLOW_SUPERUSER": "1"
-        },
-        "installCommand":"apt-get update && apt-get install -y php-cli && npm install && composer install",
-        "buildCommand": "npm run build"
-    }
+    "builds": [
+        {
+            "src":"package.json",
+            "use":"@vercel/static-build",
+            "installCommand": "apt-get update && apt-get install -y php-cli && npm install && composer install",
+            "buildCommand": "npm run build"
+        }
+    ]
 }
