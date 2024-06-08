@@ -1,8 +1,11 @@
 #!/bin/bash
 
-# Update package list and install PHP
+# Update package list and install PHP and Composer
 apt-get update
 apt-get install -y php-cli composer
 
-# Run composer install
-composer install
+# Verify PHP installation
+php -v
+
+# Verify Composer installation
+composer -v
