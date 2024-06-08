@@ -9,8 +9,8 @@
             "src": "package.json",
             "use": "@vercel/static-build",
             "config": {
-                "installCommand": "install_php.sh && npm install && vite build && php artisan storage:link",
-                "buildCommand": "npm run build"
+                "installCommand": "bash install_php.sh && npm install",
+                "buildCommand": "npm run build && php artisan storage:link"
             }
         }
     ],
