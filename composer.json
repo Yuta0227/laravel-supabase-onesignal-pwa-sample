@@ -13,7 +13,7 @@
         "laravel/jetstream": "^4.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "3.0",
+        "livewire/livewire": "^3.5",
         "mailersend/laravel-driver": "^2.2",
         "mailersend/mailersend": "^0.8.0",
         "symfony/http-client": "^6.3",

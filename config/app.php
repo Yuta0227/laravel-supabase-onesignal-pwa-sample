@@ -172,6 +172,7 @@ return [
         App\Providers\JetstreamServiceProvider::class,
         Berkayk\OneSignal\OneSignalServiceProvider::class,
         Ladumor\LaravelPwa\PWAServiceProvider::class,
+        Livewire\LivewireServiceProvider::class,
     ])->toArray(),
 
     /*
