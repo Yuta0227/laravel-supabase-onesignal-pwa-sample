@@ -11,8 +11,8 @@ export default defineConfig({
             input: ["resources/css/app.css", "resources/js/app.js"],
             refresh: true,
             // refresh: [...refreshPaths, "app/Livewire/**"],
-        }),
-        basicSsl(),
+        })
+        // basicSsl(),
     ],
     server: {
         https: true,
