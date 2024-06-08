@@ -4,7 +4,7 @@ echo "Installing PHP and Composer..."
 
 # Update package list and install PHP and Composer
 apt-get update
-apt-get install -y php-cli composer
+apt-get install -y php-cli composer php php-mbstring php-xml
 
 # Verify PHP installation
 php -v

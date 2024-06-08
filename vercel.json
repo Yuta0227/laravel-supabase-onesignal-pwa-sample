@@ -10,7 +10,7 @@
             "use": "@vercel/static-build",
             "config": {
                 "installCommand": "sh install_php.sh && npm install",
-                "buildCommand": "npm run build && php artisan storage:link && php artisan optimize:clear"
+                "buildCommand": "npm run build && php artisan storage:link && php artisan view:clear && php artisan optimize:clear"
             }
         }
     ],
