@@ -13,5 +13,6 @@
                 ログイン
             </a>
         </button>
+        <div>こんにちは</div>
     </x-slot>
 </x-guest-layout>
