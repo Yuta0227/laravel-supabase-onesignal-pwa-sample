@@ -13,7 +13,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js', 'resources/css/app.css','public/sw.js'])
     <!-- Styles -->
     @livewireStyles
     <!-- PWA  -->
@@ -31,7 +31,6 @@
 </body>
 
 </html>
-<script src="{{ asset('/public/sw.js') }}"></script>
 <script>
     if ("serviceWorker" in navigator) {
         // Register a service worker hosted at the root of the
