@@ -2,8 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "clean":"rm -rf public/build",
-        "build": "npm run clean && vite build --mode production"
+        "dev": "vite",
+        "build": "vite build --mode production"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.2",
