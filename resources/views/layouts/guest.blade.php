@@ -28,17 +28,19 @@
     </div>
 
     @livewireScripts
+    <script type="module">
+        import {
+            registerSW
+        } from 'virtual:pwa-register';
+        registerSW({
+            onRegistered(r) {
+                console.log('SW Registered',r);
+            },
+            onRegisterError(e) {
+                console.log('SW Register Error',e);
+            },
+        });
+    </script>
 </body>
 
 </html>
-<script type="module">
-    import { registerSW } from 'virtual:pwa-register';
-    registerSW({
-        onRegistered() {
-            console.log('SW Registered');
-        },
-        onRegisterError() {
-            console.log('SW Register Error');
-        },
-    });
-</script>
