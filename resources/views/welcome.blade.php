@@ -13,6 +13,6 @@
                 ログイン
             </a>
         </button>
-        <div>こんにちは</div>
+        <div class="test">こんにちは</div>
     </x-slot>
 </x-guest-layout>
