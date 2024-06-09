@@ -1,18 +1,8 @@
 {
     "version": 2,
-    "builds":[
-        {
-            "src":"api/index.php",
-            "use":"vercel-php@0.5.3"
-        },
-        {
-            "src":"package.json",
-            "use":"@vercel/static-build",
-            "config":{
-                "buildCommand":"npm run build && php artisan migrate"
-            }
-        }
-    ],
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.5.3" }
+    },
     "routes": [
         {
             "src": "/build/(.*)",
