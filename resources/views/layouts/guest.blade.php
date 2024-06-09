@@ -19,6 +19,7 @@
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
     <link rel="apple-touch-icon" href="{{ asset('/public/logo.png') }}">
+    <link rel="manifest" href="{{ asset('/public/build/manifest.webmanifest') }}">
 </head>
 
 <body>
@@ -27,19 +28,6 @@
     </div>
 
     @livewireScripts
-    <script type="module">
-        import {
-            registerSW
-        } from 'virtual:pwa-register';
-        registerSW({
-            onRegistered(r) {
-                console.log('SW Registered',r);
-            },
-            onRegisterError(e) {
-                console.log('SW Register Error',e);
-            },
-        });
-    </script>
 </body>
 
 </html>
