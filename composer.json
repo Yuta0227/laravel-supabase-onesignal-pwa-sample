@@ -58,6 +58,11 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "deploy":[
+            "echo 'Running additional commands after composer install'",
+            "@php artisan optimize:clear",
+            "@php artisan migrate --force"
         ]
     },
     "extra": {
