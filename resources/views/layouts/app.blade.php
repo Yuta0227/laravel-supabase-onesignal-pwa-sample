@@ -9,12 +9,12 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net" />
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link href="/resources/css/app.css" rel="stylesheet">
-    <script src="/resources/js/app.js"></script>
+    <link href="/resources/css/app.css" rel="stylesheet" />
+    <script defer src="/resources/js/app.js"></script>
     <script>
         console.log('yes')
     </script>
@@ -22,8 +22,8 @@
     @livewireStyles
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
-    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}"/>
+    <link rel="manifest" href="{{ asset('manifest.json') }}"/>
 </head>
 
 <body class="font-sans antialiased">
