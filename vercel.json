@@ -21,24 +21,8 @@
             "dest": "/api/index.php"
         },
         {
-            "src":"/resources/js/(.*)",
-            "dest":"/resources/js/$1"
-        },
-        {
-            "src":"/resources/css/(.*)",
-            "dest":"/resources/css/$1"
-        },
-        {
-            "src":"/resources/img/(.*)",
-            "dest":"/resources/img/$1"
-        },
-        {
-            "src":"/storage/(.*)",
-            "dest":"/storage/$1"
-        },
-        {
-            "src":"/public/(.*)",
-            "dest":"/public/$1"
+            "src":"/build/(.*)",
+            "dest":"/public/build/$1"
         }
     ],
     "env": {

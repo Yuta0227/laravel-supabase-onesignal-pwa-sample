@@ -10,6 +10,7 @@ export default defineConfig({
         laravel({
             input: ["resources/css/app.css", "resources/js/app.js"],
             refresh: true,
+            buildDirectory: "build",
         }),
         // basicSsl(),
     ],
@@ -26,12 +27,12 @@ export default defineConfig({
     },
     build: {
         manifest: true,
-        outDir:'public/build/assets',
+        outDir: "public/build",
         rollupOptions: {
             output: {
-                entryFileNames: "assets/[name].js",
-                chunkFileNames: "assets/[name].js",
-                assetFileNames: "assets/[name].[ext]",
+                entryFileNames: "assets/[name]-[hash].js",
+                chunkFileNames: "assets/[name]-[hash].js",
+                assetFileNames: "assets/[name]-[hash].[ext]",
             },
         },
     },
