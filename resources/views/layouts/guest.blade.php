@@ -13,14 +13,13 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
-    <script type="module" src="{{ asset('resoureces/js/app.js') }}"></script>
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
     <!-- Styles -->
     @livewireStyles
     <!-- PWA  -->
     <meta name="theme-color" content="#6777ef" />
-    <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}">
+    <link rel="apple-touch-icon" href="{{ asset('/public/logo.png') }}">
+    <link rel="manifest" href="{{ asset('/public/build/manifest.json') }}">
 </head>
 
 <body>
