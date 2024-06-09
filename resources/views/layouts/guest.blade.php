@@ -31,7 +31,7 @@
 </body>
 
 </html>
-<script>
+<script type="module">
     import { registerSW } from 'virtual:pwa-register';
     registerSW({
         onRegistered() {
