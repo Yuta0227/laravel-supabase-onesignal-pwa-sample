@@ -13,8 +13,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link href="/resources/css/app.css" rel="stylesheet" />
-    <script defer src="/resources/js/app.js"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
         console.log('yes')
     </script>
