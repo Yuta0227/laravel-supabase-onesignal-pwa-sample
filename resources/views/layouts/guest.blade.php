@@ -13,8 +13,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <link href="/build/assets/app.css" rel="stylesheet">
-    <script src="/build/assets/app.js"></script>
+    <link href="/resources/css/app.css" rel="stylesheet">
+    <script src="/resources/js/app.js"></script>
     <script>
         console.log('yes')
     </script>
