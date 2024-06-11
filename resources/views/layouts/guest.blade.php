@@ -69,6 +69,7 @@
 
     <link rel="manifest" href="{{ asset('/public/build/manifest.webmanifest') }}">
     {{-- onesignal --}}
+    @vite('resources/js/OneSignalSDKWorker.js')
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
         window.OneSignalDeferred = window.OneSignalDeferred || [];
