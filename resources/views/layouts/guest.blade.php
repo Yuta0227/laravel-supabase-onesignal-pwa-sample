@@ -68,6 +68,20 @@
     <meta name="msapplication-TileImage" content="{{ asset('public/images/icons/icon-512x512.png') }}">
 
     <link rel="manifest" href="{{ asset('/public/build/manifest.webmanifest') }}">
+    {{-- onesignal --}}
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(function(OneSignal) {
+            OneSignal.init({
+                appId: "f4c9c521-d72e-43d6-b5dc-d531a569077e",
+                safari_web_id: "web.onesignal.auto.58e6e5b6-6735-4042-a066-08aa34a9c18a",
+                notifyButton: {
+                    enable: true,
+                },
+            });
+        });
+    </script>
 </head>
 
 <body>
