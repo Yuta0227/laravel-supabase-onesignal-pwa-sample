@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     {{-- onesignal --}}
+    <script type="module" src="{{ asset('public/OneSignalSDKWorker.js') }}"></script>
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <!-- Scripts -->
     @vite(['resources/js/app.js', 'resources/css/app.css'])

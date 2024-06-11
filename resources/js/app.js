@@ -1,15 +1,3 @@
-import "./bootstrap";
-import { registerSW } from "virtual:pwa-register";
-registerSW({
-    onRegistered(r) {
-        console.log("SW Registered", r);
-    },
-    onRegisterError(e) {
-        console.log("SW Register Error", e);
-    },
-});
-
-importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
 window.OneSignalDeferred = window.OneSignalDeferred || [];
 OneSignalDeferred.push(function(OneSignal) {
     OneSignal.init({
@@ -19,4 +7,14 @@ OneSignalDeferred.push(function(OneSignal) {
             enable: true,
         },
     });
+});
+import "./bootstrap";
+import { registerSW } from "virtual:pwa-register";
+registerSW({
+    onRegistered(r) {
+        console.log("SW Registered", r);
+    },
+    onRegisterError(e) {
+        console.log("SW Register Error", e);
+    },
 });
